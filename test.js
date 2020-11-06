@@ -5,4 +5,5 @@ arr.forEach((cur,ind,arr) =>{
     
     console.log(arr);
 });
+console.log('Hey there!');
 
