@@ -1,0 +1,233 @@
+<!--task1-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="test">First</div>
+  
+  <script>
+
+    document.getElementById('test').textContent = 'Last';
+
+    test.innerHTML = 'Last2';
+
+    document.body.querySelector('#test').innerHTML = 'Last3';
+
+  </script>
+</body>
+</html> -->
+
+<!-- -------------------------------------------------------------- -->
+
+<!-- task2 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <img class="image" src="dog.jpg">
+
+  <script>
+    let cat = document.querySelector('.image');
+    cat.setAttribute('src', 'cat.jpg');
+    alert(cat.outerHTML);
+    
+  </script>
+</body>
+</html> -->
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- task3 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h2>Article header</h2>      
+      <div id="text">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+      </div>
+  <p>Another text</p>
+  
+  <script>
+    let elements = document.querySelectorAll('#text>p');
+    let newEl = Array.from(elements);
+
+    newEl.forEach((cur, ind) => console.log(`Selector text ${[ind]}: ${cur.innerHTML} `));
+  </script>
+
+</body>
+</html> -->
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+<!-- task4 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+
+  <script>
+    let firstLi = document.body.firstElementChild.firstElementChild.innerHTML;
+    let secondLi = document.body.firstElementChild.firstElementChild.nextElementSibling.innerHTML;
+    let lastLi = document.body.firstElementChild.lastElementChild.innerHTML;
+    let fourthLi = document.body.firstElementChild.lastElementChild.previousElementSibling.innerHTML;
+    let thirdLi = document.body.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerHTML;
+    alert(firstLi + ', ' + lastLi + ', ' + secondLi + ', ' + fourthLi + ', ' + thirdLi);
+  </script>
+</body>
+</html> -->
+
+<!-- --------------------------------------------------------------------------------------------------- -->
+
+<!-- task5 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>I'am a big header!!!</h1>
+        <div id="myDiv">
+            <p>First paragraph</p>
+            <p>Second paragraph</p>
+            <p>Third paragraph</p>
+            <p>Fourth paragraph</p>
+        </div>
+        <ul id="myList">
+            <li>Make</li>
+            <li>me</li>
+            <li>horizontal!</li>
+        </ul>
+        <span>Make me invisible, please!</span>
+
+        <script>
+          let bigHeader = document.body.firstElementChild;
+          bigHeader.style.fontSize = '50px';
+          bigHeader.style.backgroundColor = 'rgba(0,243,82,1)';
+
+          let firstParagraph = document.querySelector('#myDiv>p');
+          firstParagraph.style.fontSize = '20px';
+          firstParagraph.style.fontWeight = 'bold';
+          
+          let secondParagraph = document.body.firstElementChild.nextElementSibling.firstElementChild.nextElementSibling;
+          secondParagraph.style.color = 'red';
+          secondParagraph.style.fontSize = '20px';
+
+          let thirdParagraph = document.body.firstElementChild.nextElementSibling.lastElementChild.previousElementSibling;
+          thirdParagraph.style.fontSize = '20px';
+          thirdParagraph.style.textDecoration = 'underline';
+
+          let fourthParagraph = document.body.firstElementChild.nextElementSibling.lastElementChild;
+          fourthParagraph.style.fontSize = '20px';
+          fourthParagraph.style.fontStyle = 'italic';
+
+          let horizontal = document.querySelector('#myList');
+          horizontal.firstElementChild.style.display = 'inline-block';
+          horizontal.lastElementChild.previousElementSibling.style.display = 'inline-block';
+          horizontal.lastElementChild.style.display = 'inline-block';
+
+          let invisible = document.body.lastElementChild.previousElementSibling;
+          invisible.style.display = 'none';          
+          
+        </script>
+</body>
+</html> -->
+
+<!-- ---------------------------------------------------------------------------------------------- -->
+
+<!-- task6 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="text" id="input1" value="Text1">
+  <input type="text" id="input2" value="Text2">
+
+  <script>
+    let firstMessage = prompt('Write your message here.', 'Your message');
+    document.querySelector('#input1').value = firstMessage;
+
+    let secondMessage = prompt('Write NEW message here.', 'Your NEW message');
+    document.querySelector('#input2').value = secondMessage;
+
+    document.body.append(document.querySelector('#input1'));
+  
+  </script>
+</body>
+
+</html> -->
+
+<!-- ------------------------------------------------------------------------------------ -->
+
+<!-- task7 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    
+  <script>
+    
+    let newMain = document.createElement('main');
+    newMain.className = 'mainClass check item';
+  
+    document.body.prepend(newMain);
+
+    let newDiv = document.createElement('div');
+    newDiv.id = 'myDiv';
+    
+    document.body.firstElementChild.prepend(newDiv);
+
+    let newParagraph = document.createElement('p');
+    newParagraph.textContent = 'First paragraph';
+    document.body.firstElementChild.firstElementChild.prepend(newParagraph);
+
+  </script>
+</body>
+</html> -->
