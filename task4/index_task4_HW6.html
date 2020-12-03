@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+
+  <script>
+    
+    let firstLi = document.body.children[0].children[0].textContent;
+    let secondLi = document.body.children[0].children[1].textContent;
+    let lastLi = document.body.children[0].children[4].textContent;
+    let fourthLi = document.body.children[0].children[3].textContent;
+    let thirdLi = document.body.children[0].children[2].textContent;
+    alert(firstLi + ', ' + lastLi + ', ' + secondLi + ', ' + fourthLi + ', ' + thirdLi);
+  </script>
+</body>
+</html>
