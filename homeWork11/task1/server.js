@@ -7,13 +7,9 @@ http
     response.end(
       `        Current user name: ${os.userInfo().username}
         OS type: ${os.type()}
-        System worktime: ${os.uptime()}
-        Current work directory: ${path.dirname(
-          "D:/JS/JS_SoftServe_course/11 lesson/homeWork11/task1/server.js"
-        )}
-        Server file name: ${path.win32.basename(
-          "D:/JS/JS_SoftServe_course/11 lesson/homeWork11/task1/server.js"
-        )}`
+        System worktime: ${parseFloat((os.uptime() / 60).toFixed(2))} minutes
+        Current work directory: ${path.dirname("task1/server.js")}
+        Server file name: ${path.win32.basename("task1/server.js")}`
     );
   })
   .listen(5000);
